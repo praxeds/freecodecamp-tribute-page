@@ -19,27 +19,27 @@ section>div:last-child {
 }
 
 section:first-of-type>div:last-child {
-    background-image: url('https://github.com/praxeds/freecodecamp-tribute-page/blob/main/images/img1.png?raw=true');
+    background-image: url('assets/img1.png');
     filter: contrast(105%);
 }
 
 section:nth-of-type(2)>div:last-child {
-    background-image: url('https://github.com/praxeds/freecodecamp-tribute-page/blob/main/images/img2.jpg?raw=true');
+    background-image: url('assets/img2.jpg');
     filter: brightness(95%);
 }
 
 section:nth-of-type(3)>div:last-child {
-    background-image: url('https://github.com/praxeds/freecodecamp-tribute-page/blob/main/images/img3.jpg?raw=true');
+    background-image: url('assets/img3.jpg');
 }
 
 section:nth-of-type(4)>div:last-child {
-    background-image: url('https://github.com/praxeds/freecodecamp-tribute-page/blob/main/images/img4.jpg?raw=true');
+    background-image: url('assets/img4.jpg');
     background-position: top;
     filter: hue-rotate(150deg) grayscale(85%) brightness(90%);
 }
 
 section:nth-of-type(5)>div:last-child {
-    background-image: url('https://github.com/praxeds/freecodecamp-tribute-page/blob/main/images/img5.jpg?raw=true');
+    background-image: url('assets/img5.jpg');
     filter: grayscale(70%) contrast(125%) brightness(70%) hue-rotate(260deg) saturate(80%);
 }
 
