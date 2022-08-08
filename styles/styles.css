@@ -12,35 +12,35 @@
 }
 
 /*!Images*/
-section>div:last-child {
+section>div:nth-of-type(2) {
     background-size: cover;
     background-position: center;
     overflow: hidden;
 }
 
-section:first-of-type>div:last-child {
-    background-image: url('assets/img1.png');
-    filter: contrast(105%);
+section:first-of-type>div:nth-of-type(2) {
+    background-image: url('/assets/img1.png');
+    filter: contrast(105%) grayscale(85%);
 }
 
 section:nth-of-type(2)>div:last-child {
-    background-image: url('assets/img2.jpg');
+    background-image: url('/assets/img2.jpg');
     filter: brightness(95%);
 }
 
 section:nth-of-type(3)>div:last-child {
-    background-image: url('assets/img3.jpg');
+    background-image: url('/assets/img3.jpg');
 }
 
 section:nth-of-type(4)>div:last-child {
-    background-image: url('assets/img4.jpg');
+    background-image: url('/assets/img4.jpg');
     background-position: top;
     filter: hue-rotate(150deg) grayscale(85%) brightness(90%);
 }
 
 section:nth-of-type(5)>div:last-child {
-    background-image: url('assets/img5.jpg');
-    filter: grayscale(70%) contrast(125%) brightness(70%) hue-rotate(260deg) saturate(80%);
+    background-image: url('/assets/img5.jpg');
+    filter: grayscale(80%) contrast(125%) brightness(70%) hue-rotate(260deg) saturate(80%);
 }
 
 section:nth-of-type(2)>div:last-child,
@@ -70,6 +70,11 @@ section:nth-of-type(4)>div:last-child {
     box-sizing: border-box;
 }
 
+*::selection {
+    color: var(--dark-bg);
+    background-color: var(--link-hover);
+}
+
 section {
     display: flex;
     flex-direction: column;
@@ -83,18 +88,21 @@ section>div:last-of-type {
     height: 50vh;
 }
 
-section>div:last-of-type>span {
+section>div:last-of-type span,
+section:first-of-type span {
+    font-size: 0.7rem;
     font-family: 'IBM Plex Sans';
     text-align: end;
     position: absolute;
     color: var(--light);
     right: 0;
     bottom: 0;
-    margin-bottom: 0.5rem;
-    margin-right: 0.5rem;
+    margin-bottom: 0.7rem;
+    margin-right: 0.7rem;
 }
 
-section>div:last-of-type>span:hover {
+section>div:last-of-type>span:hover,
+section:first-of-type>span:hover {
     color: var(--dark);
     background-color: var(--link-hover);
 }
@@ -102,6 +110,12 @@ section>div:last-of-type>span:hover {
 /*!Text sections*/
 section>div:first-of-type {
     min-height: 50vh;
+}
+
+section>div:first-of-type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 section:nth-of-type(odd)>div:first-of-type {
@@ -131,6 +145,14 @@ section:nth-of-type(1)>div:first-of-type {
     text-align: center;
     padding: 0 2rem;
     gap: 1rem;
+}
+
+section:nth-of-type(1)>div:last-of-type {
+    position: relative;
+}
+
+section:nth-of-type(1)>span {
+    position: absolute;
 }
 
 h1 {
@@ -169,18 +191,33 @@ footer {
     font-family: 'IBM Plex Serif';
     font-size: 0.9rem;
     text-align: center;
-    padding: 2rem 0;
+    padding: 1.5rem 0;
     background-color: var(--light-bg);
     color: var(--dark);
 }
 
+footer>div:first-of-type {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+footer>div:first-of-type>span:first-of-type {
+    font-size: 0.8rem;
+}
+
 ion-icon {
-    margin-top: 0.5rem;
     width: 1.5rem;
     height: 1.5rem;
     padding: 0 0.3rem;
+    margin-top: auto;
+    margin-bottom: autp;
 }
 
+footer div:last-of-type {
+    display: none;
+}
 
 /*!Large devices*/
 @media (min-width: 992px) {
@@ -198,6 +235,18 @@ section:nth-of-type(even) {
     flex-direction: row-reverse;
 }
 
+section:nth-of-type(3),
+section:nth-of-type(4) {
+    width: 100vw;
+    height: 100vh;
+}
+
+section:nth-of-type(3) > div:last-of-type,
+section:nth-of-type(4) > div:last-of-type {
+    width: 50vw;
+    height: 100vh;
+}
+
 section>div {
     flex: 50%;
 }
@@ -207,12 +256,6 @@ section>div:last-of-type {
     position: relative;
     width: 50%;
     height: 100%;
-}
-
-section>div:first-of-type {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 p {
