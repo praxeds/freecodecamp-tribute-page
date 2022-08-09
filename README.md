@@ -12,7 +12,7 @@
     Second Certification Project from Freecodecamp's Responsive Web Design Curriculum.
     <br />
     <br />
-    <a href="https://praxeds.github.io/freecodecamp-tribute-page/">Live Demo</a>
+    <a href="https://praxeds.github.io/freecodecamp-tribute-page/en">Live Demo</a>
     ·
     <a href="https://codepen.io/praxeds/pen/MWQLzwy">Codepen</a>
     ·
