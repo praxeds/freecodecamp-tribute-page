@@ -56,6 +56,7 @@
 ### Built With
 
 * [Github Pages](https://pages.github.com/)
+* [fullPage.js](https://alvarotrigo.com/fullPage/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
