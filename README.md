@@ -42,10 +42,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<br>
-<div align="center">
-  <video width="100%" autoplay muted loop src="assets/header-vid.mp4" type="video/mp4"></video>
-</div>
+![header](assets/header.gif)
 
 <br>
 * Objective: Build a website that is functionally similar to this: https://tribute-page.freecodecamp.rocks.
