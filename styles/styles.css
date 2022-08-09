@@ -136,6 +136,7 @@ p {
     font-weight: 300;
     padding: 10vw;
     text-align: justify;
+    hyphens:auto;
 }
 
 
@@ -274,7 +275,7 @@ footer div:last-of-type {
     }
 
     p {
-        line-height: 1.3rem;
+        line-height: 1.6rem;
         padding: 3rem 0;
         width: 60%;
     }
