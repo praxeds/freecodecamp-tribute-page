@@ -42,10 +42,12 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![alt text](assets/Screenshot%20from%202022-07-27%2021-33-40.png)
-![alt text](assets/Screenshot%20from%202022-07-27%2021-33-57.png)
-![alt text](assets/Screenshot%20from%202022-07-27%2021-34-35.png)
+<br>
+<div align="center">
+  <video width="100%" autoplay muted loop src="assets/header-vid.mp4" type="video/mp4"></video>
+</div>
 
+<br>
 * Objective: Build a website that is functionally similar to this: https://tribute-page.freecodecamp.rocks.
 * You can use HTML, JavaScript, and CSS to complete this project. Plain CSS is recommended because that is what the lessons have covered so far and you should get some practice with plain CSS. You can use Bootstrap or SASS if you choose. Additional technologies (just for example jQuery, React, Angular, or Vue) are not recommended for this project, and using them is at your own risk. Other projects will give you a chance to work with different technology stacks like React. We will accept and try to fix all issue reports that use the suggested technology stack for this project. Happy coding!
 
