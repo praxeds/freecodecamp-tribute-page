@@ -11,6 +11,8 @@
 
 }
 
+/*!Language Picker*/
+
 /*!Images*/
 section>div:nth-of-type(2) {
     background-size: cover;
@@ -51,7 +53,7 @@ section:nth-of-type(4)>div:nth-of-type(2) {
 
 /*!Custom Scrollbar*/
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 8px;
 }
 
 
@@ -181,7 +183,7 @@ a {
     color: var(--dark);
 }
 
-ion-icon:hover {
+footer ion-icon:hover {
     background-color: var(--link-hover);
     border-radius: 50%;
 }
@@ -207,12 +209,24 @@ footer>div:first-of-type>span:first-of-type {
     font-size: 0.8rem;
 }
 
-ion-icon {
+
+footer>div:nth-of-type(2) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+footer ion-icon {
     width: 1.5rem;
     height: 1.5rem;
     padding: 0 0.3rem;
     margin-top: auto;
-    margin-bottom: autp;
+    margin-bottom: auto;
+}
+
+footer img {
+    padding: 0 0.3rem;
 }
 
 footer div:last-of-type {
@@ -221,46 +235,47 @@ footer div:last-of-type {
 
 /*!Large devices*/
 @media (min-width: 992px) {
-/*!Skeleton*/
-section {
-    display: flex;
-    height: 100vh;
-}
 
-section:nth-of-type(odd) {
-    flex-direction: row;
-}
+    /*!Skeleton*/
+    section {
+        display: flex;
+        height: 100vh;
+    }
 
-section:nth-of-type(even) {
-    flex-direction: row-reverse;
-}
+    section:nth-of-type(odd) {
+        flex-direction: row;
+    }
 
-section:nth-of-type(3),
-section:nth-of-type(4) {
-    width: 100vw;
-    height: 100vh;
-}
+    section:nth-of-type(even) {
+        flex-direction: row-reverse;
+    }
 
-section:nth-of-type(3) > div:last-of-type,
-section:nth-of-type(4) > div:last-of-type {
-    width: 50vw;
-    height: 100vh;
-}
+    section:nth-of-type(3),
+    section:nth-of-type(4) {
+        width: 100vw;
+        height: 100vh;
+    }
 
-section>div {
-    flex: 50%;
-}
+    section:nth-of-type(3)>div:last-of-type,
+    section:nth-of-type(4)>div:last-of-type {
+        width: 50vw;
+        height: 100vh;
+    }
 
-/*!Image sections*/
-section>div:last-of-type {
-    position: relative;
-    width: 50%;
-    height: 100%;
-}
+    section>div {
+        flex: 50%;
+    }
 
-p {
-    line-height: 1.3rem;
-    padding: 3rem 0;
-    width: 60%;
-}
+    /*!Image sections*/
+    section>div:last-of-type {
+        position: relative;
+        width: 50%;
+        height: 100%;
+    }
+
+    p {
+        line-height: 1.3rem;
+        padding: 3rem 0;
+        width: 60%;
+    }
 }
